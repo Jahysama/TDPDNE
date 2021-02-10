@@ -197,7 +197,7 @@ if __name__ == '__main__':
     if not save_folder.exists():
         save_folder.mkdir()
 
-    images = list(Path('../images').iterdir())
+    images = list(Path('/content/gdrive/MyDrive/nudes').iterdir())
 
     # just a text file that lists the already done images in case we
     # want to stop and continue later
