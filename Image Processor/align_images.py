@@ -188,8 +188,6 @@ if __name__ == '__main__':
     # Loading the model in the inference mode
     model = modellib.MaskRCNN(mode="inference", config=config, model_dir='./')
     model_path = Path('mask_rcnn_model.h5')
-    if not model_path.exists():
-        download_file_from_google_drive('1gJDCxx1cExbdCxhtPIFfBxa6F4obzRHY', model_path)
     # loading the trained weights o the custom dataset
     model.load_weights(model_path, by_name=True)
 
